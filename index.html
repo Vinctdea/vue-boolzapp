@@ -30,6 +30,8 @@
 
             <!-- colonna sx -->
             <div class="col_sx">
+
+                <!-- profilo user -->
                 <div class="user_profile">
                     <div class="img_name">
                         <img class="rounded" src="img/Trono_di_ferro_della_regina_Daenerys_Targaryen.webp" alt="">
@@ -39,10 +41,29 @@
                         <i class="fa-solid fa-circle-notch"></i>
                         <i class="fa-solid fa-message"></i>
                         <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
 
+                <!-- sezione notifiche -->
+                <div class="notifiche">
+                    <i class="fa-solid fa-bell-slash"></i>
+                    <div>
+                        <span><strong>Ricevi notifiche nuovi messaggi</strong></span><br>
+                       <a href="#">Attiva notifiche desktop</a>
                     </div>
 
                 </div>
+
+                <!-- sezione search -->
+
+                <div id="cont_ser">
+                    <div id="ser_img">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <input type="text" name="search" id="search">
+                </div>
+
+
             </div>
 
             <!-- colonna dx -->
@@ -55,7 +76,7 @@
                         
                         <div>
                             <span>Jon Snow</span><br>
-                            <span>Ultimo accesso oggi alle {{orario}}</span>
+                            <span id="clr_text">Ultimo accesso oggi alle {{orario}}</span>
                         </div>
                     </div>
 
