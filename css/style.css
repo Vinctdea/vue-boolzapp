@@ -35,3 +35,34 @@ main{
     /* debug */
     background-color: white;
 }
+
+.col_sx{
+    height: 100%;
+    width: 30%;
+    border-right: 1px solid rgb(162, 145, 145);
+}
+
+.col_dx{
+    width: 70%;
+    height: 100%;
+    position: relative;
+    /* debug */
+    /* background-color: black; */
+}
+
+.raw_top_dx{
+    height: 90%;
+    
+    /* debug */
+    background-color: blueviolet;
+
+}
+
+.raw_bot_dx{
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    bottom: 0 ;
+    /* debug */
+    background-color: aquamarine;
+}
