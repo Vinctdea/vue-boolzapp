@@ -1,0 +1,19 @@
+/* *******************REGOLE GENERALI**************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* **************************REGOLE MAIN******************* */
+#top_bar{
+    background-color: rgb(16, 128, 79);
+    height: 100px;
+
+}
+
+#bot_bar{
+    height: calc(100vh - 100px);
+    background-color: grey;
+    ;
+}
