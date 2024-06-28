@@ -50,14 +50,15 @@ main{
 /* ****************************COL DX****************************** */
 
 .col_dx{
-    width: 70%;
+    width: calc(100% - 400px);
+    min-width: 400px;
     height: 100%;
     position: relative;
     background-image: url(../img/bg\ whatsapp.png);
     background-size:contain;
 }
 
-.raw_top_dx{
+.row_top_dx{
     height: 10%;
     width: 100%;
     padding-right: 10px;
@@ -73,13 +74,13 @@ color: rgb(148, 153, 157);
 }
 
 
-.raw_mid_dx{
+.row_mid_dx{
     height: 75%;
     position: absolute;
     top: 10%;
 }
 
-.raw_bot_dx{
+.row_bot_dx{
     height: 15%;
     width: 100%;
     position: absolute;
@@ -92,7 +93,7 @@ color: rgb(148, 153, 157);
 .col_sx{
     
     height: 100%;
-    width: 30%;
+    width: 400px;
     border-right: 1px solid rgb(162, 145, 145);
     background-color:rgb(255, 255, 252);
 }
@@ -116,8 +117,8 @@ color: rgb(148, 153, 157);
 }
 
 .rounded{
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
 }
 
 .icons_user >*{
@@ -178,4 +179,27 @@ color: rgb(148, 153, 157);
     border:1px solid lightgrey;
     text-align: center;
     height: 100%;
+}
+
+.contact{
+    width: 100%;
+    height: 74%;
+    overflow-y:auto;
+}
+
+.chat_row{
+    display: flex;
+    gap: 20px;
+    height: calc(100% / 7);
+    padding: 4px;
+    align-items: center;
+
+}
+
+.chat_row h2{
+    font-size: 18px;
+}
+
+.chat_row span{
+    font-size: 12px;
 }
