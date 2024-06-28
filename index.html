@@ -69,85 +69,15 @@
 
                 <!-- sezione contatti chat -->
                  <div class="contact">
-                    <div class="chat_row">
+                    <div class="chat_row" :class="clicked " v-for=" (item, index) in contacts" :key="index" @click="cliccato">
                         <div>
-                            <img class="rounded" src="img/jon snow.jpeg" alt="">
+                            <img class="rounded" :src="item.avatar" alt="item.name">
                         </div>
                         <div>
-                            <h2>jon snow</h2>
+                            <h2>{{item.name}}</h2>
                             <span>ultimo messaggio inviato</span>
                         </div>
-                       
-                    </div>
-                    <div class="chat_row">
-                        <div>
-                            <img class="rounded" src="img/jon snow.jpeg" alt="">
-                        </div>
-                        <div>
-                            <h2>jon snow</h2>
-                            <span>ultimo messaggio inviato</span>
-                        </div>
-                       
-                    </div>
-                    <div class="chat_row">
-                        <div>
-                            <img class="rounded" src="img/jon snow.jpeg" alt="">
-                        </div>
-                        <div>
-                            <h2>jon snow</h2>
-                            <span>ultimo messaggio inviato</span>
-                        </div>
-                       
-                    </div>
-                    <div class="chat_row">
-                        <div>
-                            <img class="rounded" src="img/jon snow.jpeg" alt="">
-                        </div>
-                        <div>
-                            <h2>jon snow</h2>
-                            <span>ultimo messaggio inviato</span>
-                        </div>
-                       
-                    </div>
-                    <div class="chat_row">
-                        <div>
-                            <img class="rounded" src="img/jon snow.jpeg" alt="">
-                        </div>
-                        <div>
-                            <h2>jon snow</h2>
-                            <span>ultimo messaggio inviato</span>
-                        </div>
-                       
-                    </div>
-                    <div class="chat_row">
-                        <div>
-                            <img class="rounded" src="img/jon snow.jpeg" alt="">
-                        </div>
-                        <div>
-                            <h2>jon snow</h2>
-                            <span>ultimo messaggio inviato</span>
-                        </div>
-                       
-                    </div>
-                    <div class="chat_row">
-                        <div>
-                            <img class="rounded" src="img/jon snow.jpeg" alt="">
-                        </div>
-                        <div>
-                            <h2>jon snow</h2>
-                            <span>ultimo messaggio inviato</span>
-                        </div>
-                       
-                    </div>
-                    <div class="chat_row">
-                        <div>
-                            <img class="rounded" src="img/jon snow.jpeg" alt="">
-                        </div>
-                        <div>
-                            <h2>jon snow</h2>
-                            <span>ultimo messaggio inviato</span>
-                        </div>
-                       
+                                             
                     </div>
 
                  </div>
@@ -164,7 +94,7 @@
                         
                         <div>
                             <span>Jon Snow</span><br>
-                            <span id="clr_text">Ultimo accesso oggi alle {{orario}}</span>
+                            <span id="clr_text">Ultimo accesso oggi alle orario</span>
                         </div>
                     </div>
 
