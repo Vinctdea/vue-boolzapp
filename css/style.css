@@ -6,6 +6,11 @@
 }
 
 /* **************************REGOLE MAIN******************* */
+main{
+    position: relative;
+}
+
+/* *********** background *********** */
 #top_bar{
     background-color: rgb(16, 128, 79);
     height: 100px;
@@ -16,4 +21,17 @@
     height: calc(100vh - 100px);
     background-color: grey;
     ;
+}
+
+/*****************CONTAINER APP************************/
+
+#app_container{
+    position: absolute;
+    top: 30px;
+    left: 10%;
+    width: 80%;
+    height: calc(100vh - 60px);
+    display: flex;
+    /* debug */
+    background-color: white;
 }
