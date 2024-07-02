@@ -4,13 +4,15 @@
   createApp({
     data() {
       return {
-        clicked:"",
+        
+        
         
 contacts: [
     {
         name: 'Jon Snow',
         avatar: 'img/jon snow.jpeg',
         visible: true,
+        clicked:"",
         messages: [
             {
                 date: '10/01/2020 15:30:55',
@@ -33,6 +35,7 @@ contacts: [
         name: 'Ned Stark',
         avatar: 'img/ned_stark.jpg',
         visible: true,
+        clicked:"",
         messages: [
             {
                 date: '20/03/2020 16:30:00',
@@ -55,6 +58,7 @@ contacts: [
         name: 'Arya Stark',
         avatar: 'img/Arya_stark_s7.webp',
         visible: true,
+        clicked:"",
         messages: [
             {
                 date: '28/03/2020 10:10:40',
@@ -77,6 +81,7 @@ contacts: [
         name: 'Tyrion Lannister',
         avatar: 'img/Tyrion_Lannister.jpg',
         visible: true,
+        clicked:"",
         messages: [
             {
                 date: '10/01/2020 15:30:55',
@@ -94,6 +99,7 @@ contacts: [
         name: 'Cersei Lannister',
         avatar: 'img/cersei.jpeg',
         visible: true,
+        clicked:"",
         messages: [
             {
                 date: '10/01/2020 15:30:55',
@@ -111,6 +117,7 @@ contacts: [
         name: 'Re della notte',
         avatar: 'img/re.jpg',
         visible: true,
+        clicked:"",
         messages: [
             {
                 date: '10/01/2020 15:30:55',
@@ -133,6 +140,7 @@ contacts: [
         name: 'Sansa Stark',
         avatar: 'img/sansa_stark.jpg',
         visible: true,
+        clicked:"",
         messages: [
             {
                 date: '10/01/2020 15:30:55',
@@ -150,6 +158,7 @@ contacts: [
         name: 'Jamie Lanniester',
         avatar: 'img/Jamie_lannister.jpeg',
         visible: true,
+        clicked:"",
         messages: [
             {
                 date: '10/01/2020 15:30:55',
@@ -170,20 +179,21 @@ contacts: [
     }
 ]
 
-
-
-
       }
     },
     methods:{
-        cliccato(){
-            if(this.clicked === "clicked"){
-                this.clicked = "";
+        cliccato(item){
+            
+            if(item.clicked === ""){
+                item.clicked = "clicked";
 
             }else {
-                this.clicked = "clicked";
+                item.clicked = "";
             }
+            console.log(item.messages[0].message);
                 
         }
     }
+   
   }).mount('#app_container')
+  

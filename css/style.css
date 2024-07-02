@@ -80,9 +80,11 @@ color: rgb(148, 153, 157);
 
 .row_mid_dx{
     width: 100%;
-    height: 75%;
+    height: 77%;
     position: absolute;
     top: 10%;
+    overflow-y: auto;
+    
 }
 
 .inviato{
@@ -90,11 +92,12 @@ color: rgb(148, 153, 157);
     align-items: center;
     border-radius: 7px;
     padding-left: 10px;
-    width: 150px;
+    max-width: 200px;
     height: 30px;
-    margin-left: calc(100% - 180px);
+    margin-left: calc(100% - 300px);
     margin-top: 50px;
     background-color: rgb(213, 249, 186);
+    position: relative;
 }
 
 .ricevuto{
@@ -102,23 +105,30 @@ color: rgb(148, 153, 157);
     align-items: center;
     border-radius: 7px;
     padding-left: 10px;
-    width: 150px;
+    max-width: 200px;
     height: 30px;
     margin-left: 20px;
     margin-top: 50px;
     background-color: white;
+    position: relative;
+    
 
 }
 
+.text{
+   width: fit-content;
+    font-size: 12px;
+}
 .ora{
     font-size: 10px;
-    align-self:flex-end;
-    margin-left: 68%;
-    margin-bottom: 2px;
+   position: absolute;
+   right: 2px;
+   bottom: 2px;
+    
 }
 
 .row_bot_dx{
-    height: 12%;
+    height: 10%;
     width: 100%;
     padding: 4px;
     position: absolute;
@@ -265,3 +275,4 @@ color: rgb(148, 153, 157);
 .chat_row span{
     font-size: 12px;
 }
+

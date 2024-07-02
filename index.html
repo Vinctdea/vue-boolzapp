@@ -69,7 +69,7 @@
 
                 <!-- sezione contatti chat -->
                  <div class="contact">
-                    <div class="chat_row" :class="clicked " v-for=" (item, index) in contacts" :key="index" @click="cliccato">
+                    <div class="chat_row" :class="item.clicked " v-for=" (item, index) in contacts" :key="index" @click="cliccato(item)">
                         <div>
                             <img class="rounded" :src="item.avatar" alt="item.name">
                         </div>
@@ -109,8 +109,8 @@
                 <div class="row_mid_dx">
 
                     <!-- msg inviati -->
-                    <div class="inviato">
-                        <span class="text">test</span>
+                    <div class="inviato" v-for=" (item, index) in contacts" :key="index" >
+                        <span  class="text">{{item.messages[0].message}}</span>
                         <span class="ora">ora</span>
                     </div>
 
